@@ -1,0 +1,23 @@
+# import libraries
+import numpy as py
+import pandas as pd
+
+#Series and DataFrames are the primary data types within Pandas. Those data types are implemented using NumPy data structures.
+
+# series
+my_series = pd.Series([1, 2, 3, 4, np.nan, 6, 7, 8])
+my_series
+
+# datetime index
+my_dates = pd.data_range('20200101', periods = 10)
+my_dates
+
+# data frame
+sample_data = np.array(np.arange(24)).reshape(4, 6))
+my_dataframe = pd.DataFrame(sample_data, index = my_dates, columns = list('ABCD'))
+my_dateframe
+
+# dtype can find the type of the data.
+# describe function can display the information of the dataset.
+# pandas selection methods are similar to numpy.
+
